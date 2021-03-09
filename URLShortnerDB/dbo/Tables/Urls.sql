@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Urls]
+(
+	[Id] INT PRIMARY KEY IDENTITY, 
+    [URL] NVARCHAR(MAX) NOT NULL, 
+    [ShortURL] NVARCHAR(50) NOT NULL, 
+    [Token] NVARCHAR(10) NOT NULL, 
+    [Created] DATETIME2 NOT NULL,
+)

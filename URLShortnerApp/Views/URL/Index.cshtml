@@ -1,0 +1,28 @@
+﻿@model URLShortnerApp.DataAccess.Models.URLModel
+
+@{
+    ViewData["Title"] = "PostURL";
+}
+
+    <div class="row p-3 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">Your Shortened URL</h2>
+        </div>
+        <div class="col-8 pt-4">
+            <div class="form-group row">
+                <div class="col-9">
+                    <input asp-for="ShortURL" class="form-control" />
+                </div>
+                <div class="col-3">
+                    @*<input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>*@
+                    <a class="btn btn-primary text-white-50">Copy URL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
